@@ -26,11 +26,11 @@ h2, title
 html, body 
 {
     margin: 0;
-    height: 100%; 
+    width: auto; 
     overflow: hidden; 
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-color: black;
     background-position-x: center;
 }
