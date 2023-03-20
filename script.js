@@ -24,6 +24,8 @@ function menu_show()
     var game = document.getElementById("game");
     var go = document.getElementById("game_over");
 
+    Mpick.style.display = "none";
+    Kpick.style.display = "none";
     go.style.display = "none";
     lore.style.display = "none";
     game.style.display = "none";
