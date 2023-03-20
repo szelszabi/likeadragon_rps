@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Japenese Catfight Club</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <h1 class="center">Rock paper scissors</h1>
     <h2 class="center">yakuza edition</h2>
-    <div id="menu" class="menu">
-        <button class="menub">Play!</button>
-        <button class="menub">lore</button>
+    <div id="menu">
+        <button class="menub" onclick="game_show()">Play!</button>
+        <button class="menub" onclick="lore_show()">lore</button>
+    </div>
+    <div id="lore">
+        <button class="menub back" onclick="menu_show()">back</button>
+        <h1 class="center">Lore</h1>
+        <p class="lore">Goro Majima challenged Kiryu Kazuma for a duel as usual.<br>
+        However this duel was far from usual,<br>
+        you see this is a best-of-three match of Rock Paper Scissors.<br>
+        This historic duel will finally decide the strongest yakuza<br>
+        in the city of Kamurocho. Who will win? The reckless Dragon of Dojima<br>
+        or the Mad Dog of Shimano? Everything is in your hands to finalize<br>
+        their fates. You play as Kazuma Kiryu 
+        </p>
+    </div>
+    <div id="game">
+        <button class="menub back" onclick="menu_show()">back</button>
+        <table>
+            <tr>
+                <td><button onclick="test()"><img src="images/rock.png"></button></td>
+                <td><button><img src="images/paper.png"></button></td>
+                <td><button><img src="images/scissors.png"></button></td>
+            </tr>
+        </table>
+        <table class="picks">
+            <tr>
+                <td class="picks">Kiryu's pick:</td>
+                <td class="picks" id="result"></td>
+                <td class="picks">Majima's pick:</td>
+            </tr>
+            <tr>
+                <td class="picks" id="pickKiryu"></td>
+                <td class="picks"><table style="width: 100%;"><tr><td>Kiryu's score:</td><td>Majima's score:</td></tr><tr><td id="scoreKiryu"></td><td id="scoreMajima"></td></tr></table></td>
+                <td class="picks" id="pickMajima"></td>
+            </tr>
+        </table>
     </div>
 </body>
+<script src="script.js"></script>
+
 </html>

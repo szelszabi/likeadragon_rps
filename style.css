@@ -11,35 +11,94 @@ h1
 {
     text-align: center;
 }
-h2
+h2, title
 {
     font-family: yakuza;
     font-size: 64px;
     margin-top: 0%;
-    color: azure;
+    margin-bottom: 1%;
+
+    color: #f0ffff;
 }
-body 
+
+html, body {margin: 0; height: 100%; overflow: hidden; background-image: url('images/background.jpg')}
+
+#menu
 {
-    background-image: url('images/background.jpg');
-}
-.menu
-{
-    
+    display: inline;
     position:fixed;
-    left: 24%;
+    left: 23%;
+}
+button
+{
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .menub
 {
-    cursor: pointer;
     font-family: yakuza;
     font-size: 144px;
     display: inline;
     color: azure;
-    background: none;
-    border: none;
-    padding: 100px;
+    margin: 100px;
 }
 a
 {
     text-decoration: none;
+}
+#lore, #game
+{
+    display: none;
+}
+.back, #result
+{
+    position: relative;
+    margin-top: 0%;
+    left: 10%;
+    font-size: 64px;
+    margin-bottom: 0%;
+    text-align: center;
+}
+p.lore
+{
+    position: relative;
+    left: 25%;
+    font-family: yakuza;
+    color: azure;
+    font-size: 32px;
+}
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+td
+{
+    text-align: center;
+
+    padding-top: 5%;
+}
+img
+{
+    width: 100%;
+}
+table.picks
+{
+    width: 75%;
+}
+td.picks
+{
+    position: relative;
+    font-family: yakuza;
+    color: azure;
+    font-size: 40px;
+    width: 25%;
+    padding-top: 0%;
+    text-align: center;
+}
+#result
+{
+    left: 0%;
 }
