@@ -1,0 +1,45 @@
+@font-face { font-family: yakuza; src: url('fonts/edosz.ttf'); } 
+h1
+{
+    font-family: yakuza;
+    font-size: 72px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: azure;
+}
+.center
+{
+    text-align: center;
+}
+h2
+{
+    font-family: yakuza;
+    font-size: 64px;
+    margin-top: 0%;
+    color: azure;
+}
+body 
+{
+    background-image: url('images/background.jpg');
+}
+.menu
+{
+    
+    position:fixed;
+    left: 24%;
+}
+.menub
+{
+    cursor: pointer;
+    font-family: yakuza;
+    font-size: 144px;
+    display: inline;
+    color: azure;
+    background: none;
+    border: none;
+    padding: 100px;
+}
+a
+{
+    text-decoration: none;
+}
