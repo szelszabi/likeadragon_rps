@@ -32,6 +32,7 @@ html, body
     background-repeat: no-repeat;
     background-size: auto;
     background-color: black;
+    background-position-x: center;
 }
 
 #menu
@@ -76,6 +77,8 @@ p.lore
     position: relative;
     left: 25%;
     font-family: merryweather;
+    width: 50%;
+    text-align: justify;
     color: azure;
     font-size: 32px;
 }
