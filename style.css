@@ -23,7 +23,16 @@ h2, title
     color: #f0ffff;
 }
 
-html, body {margin: 0; height: 100%; overflow: hidden; background-image: url('images/background.jpg')}
+html, body 
+{
+    margin: 0;
+    height: 100%; 
+    overflow: hidden; 
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: black;
+}
 
 #menu
 {
