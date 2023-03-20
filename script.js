@@ -1,6 +1,6 @@
 var majimaCounter = 0;
 var kiryuCounter = 0;
-
+var first = 1;
 var Kpick = document.getElementById("i0");
 var Mpick = document.getElementById("i3");
 
@@ -11,6 +11,8 @@ function reset()
 {
     majimaCounter = 0;
     kiryuCounter = 0;
+    Mpick.style.display = "none";
+    Kpick.style.display = "none";
     document.getElementById("scoreKiryu").innerHTML = kiryuCounter;
     document.getElementById("scoreMajima").innerHTML = majimaCounter;
     document.getElementById("MajimaWon").style.display = "none";
@@ -24,8 +26,7 @@ function menu_show()
     var game = document.getElementById("game");
     var go = document.getElementById("game_over");
 
-    Mpick.style.display = "none";
-    Kpick.style.display = "none";
+    
     go.style.display = "none";
     lore.style.display = "none";
     game.style.display = "none";
@@ -74,9 +75,9 @@ function game_over()
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-}                      // r    s    p
+}                           // r    s    p
 async function match(Kiryu) // 0 -> 1 -> 2
-{                     // ^---------ˇ
+{                           // ^---------ˇ
     Mpick.style.display = "none";
     Kpick.style.display = "none";
     const arr = [0,1,2];
@@ -87,7 +88,7 @@ async function match(Kiryu) // 0 -> 1 -> 2
     Mpick = document.getElementById("i"+Majima.toString());
     Kpick.style.display = "block";
     Mpick.style.display = "block";
-    if (Majima%3 == Kiryu) 
+    if (Majima%3 == Kiryu && !first) 
     {
         result.innerHTML = "Draw!";
     }
@@ -109,6 +110,7 @@ async function match(Kiryu) // 0 -> 1 -> 2
         game_over();
         return;
     }
+    first = 0;
 }
 
 function retry()
