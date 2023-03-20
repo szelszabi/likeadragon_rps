@@ -1,4 +1,6 @@
 @font-face { font-family: yakuza; src: url('fonts/edosz.ttf'); } 
+@font-face { font-family: merryweather; src: url('fonts/merryweather.ttf'); } 
+
 h1
 {
     font-family: yakuza;
@@ -47,7 +49,7 @@ a
 {
     text-decoration: none;
 }
-#lore, #game
+#lore, #game, #game_over
 {
     display: none;
 }
@@ -64,7 +66,7 @@ p.lore
 {
     position: relative;
     left: 25%;
-    font-family: yakuza;
+    font-family: merryweather;
     color: azure;
     font-size: 32px;
 }
@@ -101,4 +103,24 @@ td.picks
 #result
 {
     left: 0%;
+}
+.picki
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: none;
+}
+.gameover
+{
+    font-size: 180px;
+}
+button.go
+{
+    left:25%
+}
+.winner
+{
+    display: none;
+    margin-bottom: 10%;
 }

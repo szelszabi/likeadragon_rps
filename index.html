@@ -16,20 +16,21 @@
         <h1 class="center">Lore</h1>
         <p class="lore">Goro Majima challenged Kiryu Kazuma for a duel as usual.<br>
         However this duel was far from usual,<br>
-        you see this is a best-of-three match of Rock Paper Scissors.<br>
+        you see this is a first-to-eleven match of Rock Paper Scissors.<br>
         This historic duel will finally decide the strongest yakuza<br>
         in the city of Kamurocho. Who will win? The reckless Dragon of Dojima<br>
         or the Mad Dog of Shimano? Everything is in your hands to finalize<br>
-        their fates. You play as Kazuma Kiryu 
+        their fates.<br>
+        You play as Kazuma Kiryu who is also known as the Dragon of Dojima.
         </p>
     </div>
     <div id="game">
         <button class="menub back" onclick="menu_show()">back</button>
         <table>
             <tr>
-                <td><button onclick="test()"><img src="images/rock.png"></button></td>
-                <td><button><img src="images/paper.png"></button></td>
-                <td><button><img src="images/scissors.png"></button></td>
+                <td><button onclick="match(0)"><img src="images/rock.png"></button></td>
+                <td><button onclick="match(1)"><img src="images/paper.png"></button></td>
+                <td><button onclick="match(2)"><img src="images/scissors.png"></button></td>
             </tr>
         </table>
         <table class="picks">
@@ -39,11 +40,18 @@
                 <td class="picks">Majima's pick:</td>
             </tr>
             <tr>
-                <td class="picks" id="pickKiryu"></td>
+                <td class="picks" id="pickKiryu"><img id="i2" class="picki" src="images/paper_no_label.png"><img id="i0" class="picki" src="images/rock_no_label.png"><img id="i1" class="picki" src="images/scissors_no_label.png"></td>
                 <td class="picks"><table style="width: 100%;"><tr><td>Kiryu's score:</td><td>Majima's score:</td></tr><tr><td id="scoreKiryu"></td><td id="scoreMajima"></td></tr></table></td>
-                <td class="picks" id="pickMajima"></td>
+                <td class="picks" id="pickMajima"><img id="i5" class="picki" src="images/paper_no_label.png"><img id="i3" class="picki" src="images/rock_no_label.png"><img id="i4" class="picki" src="images/scissors_no_label.png"></td>
             </tr>
         </table>
+    </div>
+    <div id="game_over">
+        <h1 class="center gameover">Game over!</h1>
+        <h2 id="KiryuWon" class="center winner">You won!<br>Kiryu is now<br>the Dragon of Kamurocho</h2>
+        <h2 id="MajimaWon" class="center winner">You lost!<br>Majima is now<br>the Mad Dog of Kamurocho</h2>
+        <button class="menub back go" onclick="menu_show()">Back to<br>the menu</button>
+        <button class="menub back go" onclick="retry()">retry</button>
     </div>
 </body>
 <script src="script.js"></script>
