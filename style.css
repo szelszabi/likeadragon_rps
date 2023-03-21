@@ -27,7 +27,7 @@ html, body
 {
     margin: 0;
     width: auto; 
-    overflow: hidden; 
+    overflow-x: hidden; 
     background-image: url('images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +92,7 @@ td
 {
     text-align: center;
 
-    padding-top: 5%;
+    /*padding-top: 5%;*/
 }
 img
 {
@@ -134,5 +134,5 @@ button.go
 .winner
 {
     display: none;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }

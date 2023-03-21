@@ -69,6 +69,9 @@ function game_over()
     }
     else
     {
+        var sfx = new Audio();
+        sfx.src = "sounds/kiryu_chan.mp3";
+        sfx.play();
         document.getElementById("MajimaWon").style.display = "block";
     }
 }
@@ -76,7 +79,7 @@ function game_over()
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }                           // r    s    p
-async function match(Kiryu) // 0 -> 1 -> 2
+function match(Kiryu) // 0 -> 1 -> 2
 {                           // ^---------ˇ
     Mpick.style.display = "none";
     Kpick.style.display = "none";
@@ -104,7 +107,6 @@ async function match(Kiryu) // 0 -> 1 -> 2
         document.getElementById("scoreMajima").innerHTML = majimaCounter;
         result.innerHTML = "Majima won!";
     }
-    await sleep(3000);
     if(majimaCounter == 11 || kiryuCounter == 11)
     {
         game_over();
