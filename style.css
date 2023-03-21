@@ -37,9 +37,8 @@ html, body
 
 #menu
 {
-    display: inline;
-    position:fixed;
-    left: 23%;
+    display: flex;
+    justify-content: center;
 }
 button
 {
@@ -53,7 +52,7 @@ button
     font-size: 144px;
     display: inline;
     color: azure;
-    margin: 25%;
+    margin: 100px;
 }
 a
 {

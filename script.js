@@ -30,7 +30,7 @@ function menu_show()
     go.style.display = "none";
     lore.style.display = "none";
     game.style.display = "none";
-    menu.style.display = "block";
+    menu.style.display = "flex";
     reset();
 }
 
